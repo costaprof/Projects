@@ -2,15 +2,15 @@
 #include <fstream>
 #include <string>
 #include <cstring>
-using namespace std;
 
+using namespace std;
 
 
 void function1(string s) {
 
     fstream file("env.txt");
 
-    if(!file.is_open()) cout<<"Error1"<<endl;
+    if (!file.is_open()) cout << "Error1" << endl;
     else {
         // size_t linePos;
         size_t var;
@@ -18,11 +18,11 @@ void function1(string s) {
         while (getline(file, line)) {
             //linePos = file.tellg();
             size_t found = line.find(s);
-            if(found != string::npos) {
+            if (found != string::npos) {
                 var = line.find("=");
-                if(var != string::npos) {
-                    if(found < var) continue;
-                    else cout<<line<<endl;
+                if (var != string::npos) {
+                    if (found < var) continue;
+                    else cout << line << endl;
                 }
             }
         }
@@ -34,7 +34,7 @@ void function2(string s) {
 
     fstream file("env.txt");
 
-    if(!file.is_open()) cout<<"Error2"<<endl;
+    if (!file.is_open()) cout << "Error2" << endl;
     else {
 
         size_t var;
@@ -42,13 +42,13 @@ void function2(string s) {
         while (getline(file, line)) {
             //linePos = file.tellg();
             size_t found = line.find(s);
-            if(found != string::npos) {
+            if (found != string::npos) {
                 var = line.find("=");
-                if(var != string::npos) {
-                    if(found < var) continue;
+                if (var != string::npos) {
+                    if (found < var) continue;
                     else {
                         pre = line.substr(0, var);
-                        cout<<pre<<endl;
+                        cout << pre << endl;
                     }
                 }
             }
@@ -60,21 +60,21 @@ void function2(string s) {
 void function3(string s) {
     fstream file("env.txt");
 
-    if(!file.is_open()) cout<<"Error3"<<endl;
+    if (!file.is_open()) cout << "Error3" << endl;
     else {
         string line;
         size_t var;
-        string pre, pos,userinputToLower,originalLine;
-        for(char c : s) userinputToLower+= tolower(c);
-        while(getline(file, line)) {
+        string pre, pos, userinputToLower, originalLine;
+        for (char c: s) userinputToLower += tolower(c);
+        while (getline(file, line)) {
             originalLine = "";
-            for(char c : line) originalLine+= tolower(c);
+            for (char c: line) originalLine += tolower(c);
             size_t found = originalLine.find(userinputToLower);
-            if(found != string::npos) {
+            if (found != string::npos) {
                 var = originalLine.find("=");
-                if(var != string::npos) {
-                    if(found < var) continue;
-                    else cout<<line<<endl;
+                if (var != string::npos) {
+                    if (found < var) continue;
+                    else cout << line << endl;
                 }
             }
 
@@ -87,23 +87,23 @@ void function4(string s) {
 
     fstream file("env.txt");
 
-    if(!file.is_open()) cout<<"Error3"<<endl;
+    if (!file.is_open()) cout << "Error3" << endl;
     else {
         string line;
         size_t var;
-        string pre, pos,userinputToLower,originalLine;
-        for(char c : s) userinputToLower+= tolower(c);
-        while(getline(file, line)) {
+        string pre, pos, userinputToLower, originalLine;
+        for (char c: s) userinputToLower += tolower(c);
+        while (getline(file, line)) {
             originalLine = "";
-            for(char c : line) originalLine+= tolower(c);
+            for (char c: line) originalLine += tolower(c);
             size_t found = originalLine.find(userinputToLower);
-            if(found != string::npos) {
+            if (found != string::npos) {
                 var = originalLine.find("=");
-                if(var != string::npos) {
-                    if(found < var) continue;
+                if (var != string::npos) {
+                    if (found < var) continue;
                     else {
-                        pre = line.substr(0,var);
-                        cout<<pre<<endl;
+                        pre = line.substr(0, var);
+                        cout << pre << endl;
                     }
                 }
             }
@@ -132,7 +132,7 @@ int main(int argc, char *argv[]) {
             cout << "Error: Missing argument after -i" << endl;
             return 1;
         }
-    } else if ((strcmp(argv[1], "-n") == 0 && argc == 4 && strcmp(argv[2], "-i") == 0) || 
+    } else if ((strcmp(argv[1], "-n") == 0 && argc == 4 && strcmp(argv[2], "-i") == 0) ||
                (strcmp(argv[1], "-i") == 0 && argc == 4 && strcmp(argv[2], "-n") == 0)) {
         function4(argv[3]);
     } else {
