@@ -111,7 +111,6 @@ void function4(string s) {
     }
 }
 
-
 int main(int argc, char *argv[]) {
     if (argc < 2 || argc > 4) {
         cout << "Error: Invalid number of arguments" << endl;
@@ -121,20 +120,21 @@ int main(int argc, char *argv[]) {
     if (strcmp(argv[1], "-n") == 0) {
         if (argc == 3) {
             function2(argv[2]);
+        } else if (argc == 4 && strcmp(argv[2], "-i") == 0) {
+            function4(argv[3]);
         } else {
-            cout << "Error: Missing argument after -n" << endl;
+            cout << "Error: Invalid combination of arguments" << endl;
             return 1;
         }
     } else if (strcmp(argv[1], "-i") == 0) {
         if (argc == 3) {
             function3(argv[2]);
+        } else if (argc == 4 && strcmp(argv[2], "-n") == 0) {
+            function4(argv[3]);
         } else {
-            cout << "Error: Missing argument after -i" << endl;
+            cout << "Error: Invalid combination of arguments" << endl;
             return 1;
         }
-    } else if ((strcmp(argv[1], "-n") == 0 && argc == 4 && strcmp(argv[2], "-i") == 0) ||
-               (strcmp(argv[1], "-i") == 0 && argc == 4 && strcmp(argv[2], "-n") == 0)) {
-        function4(argv[3]);
     } else {
         function1(argv[1]);
     }
