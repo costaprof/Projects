@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <cstring>
 #include <sys/wait.h>
-
+#include <vector>
 using namespace std;
 
 #define maxInputSize 200
 
 int main() {
-    int parenPID = getpid();
-
+    vector <pid_t> backgroundPIDs;
+    
     while(true) {
         //cout<<endl;
         cout<<"%";
@@ -47,11 +47,20 @@ int main() {
         }
 
         else {
-            if(!runInBackground) {
+	    if(runInBackground){
+		backgroundPIDs.push_back(pid);
+                cout<<"Background processes IDs are: "<<endl;
+		for(pid_t bPid: backgroundPIDs) {
+			cout<<"PID: "<<bPid<<endl;
+}
+}
+
+            else {
                 int status;
                 waitpid(pid, &status, 0);
             }
         }
+        cout<<"Current Proccess ID: "<<pid<<endl;
         cout<<endl;
     }
     return 0;
