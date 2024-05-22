@@ -42,7 +42,6 @@ int main() {
         else if(pid==0) {
             execvp(inputTokenized[0], inputTokenized);
             perror("execvp failed");
-	    cerr<<"Invalid Input, please check again"<<endl;
             exit(EXIT_FAILURE);
         }
         
@@ -65,4 +64,3 @@ int main() {
     }
     return 0;
 }
-
