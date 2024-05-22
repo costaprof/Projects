@@ -1,5 +1,5 @@
 #include <iostream>
-#include <unistd.h> // Include the header file for fork
+#include <unistd.h>
 #include <stdio.h>
 #include <cstring>
 #include <sys/wait.h>
@@ -12,9 +12,8 @@ int main() {
     vector <pid_t> backgroundPIDs;
     
     while(true) {
-        //cout<<endl;
         cout<<"%";
-        char input[maxInputSize] = {0 };
+        char input[maxInputSize] = {0};
         fgets(input, maxInputSize, stdin);
         // remove trailing new line if present
         input[strcspn(input, "\n")] = 0;
@@ -32,9 +31,9 @@ int main() {
             inputTokenized[i++] = p;
             p = strtok(NULL, " ");
         }
-
+        
         inputTokenized[i] = NULL;
-
+        
         pid_t pid = fork();
         if(pid == -1) {
             perror("fork failed");
@@ -45,16 +44,16 @@ int main() {
             perror("execvp failed");
             exit(EXIT_FAILURE);
         }
-
+        
         else {
-	    if(runInBackground){
-		backgroundPIDs.push_back(pid);
+            if(runInBackground){
+                backgroundPIDs.push_back(pid);
                 cout<<"Background processes IDs are: "<<endl;
-		for(pid_t bPid: backgroundPIDs) {
-			cout<<"PID: "<<bPid<<endl;
-}
-}
-
+                for(pid_t bPid: backgroundPIDs) {
+                    cout<<"PID: "<<bPid<<endl;
+                }
+            }
+            
             else {
                 int status;
                 waitpid(pid, &status, 0);
@@ -65,3 +64,4 @@ int main() {
     }
     return 0;
 }
+
