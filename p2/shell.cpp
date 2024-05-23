@@ -4,6 +4,7 @@
 #include <cstring>
 #include <sys/wait.h>
 #include <vector>
+#include <errno.h>
 using namespace std;
 
 #define maxInputSize 200
@@ -59,7 +60,6 @@ int main() {
                 int status;
                 pid_t result = waitpid(pid, &status, 0);
                 if(result == -1) {
-                    // Handle waitpid error
                     if(errno == ECHILD) {
                         cerr << "No child processes" << endl;
                     }
