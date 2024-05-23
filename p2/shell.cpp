@@ -15,7 +15,7 @@ int main() {
         cout<<"%";
         char input[maxInputSize] = {0};
         fgets(input, maxInputSize, stdin);
-        // remove trailing new line if present
+        
         input[strcspn(input, "\n")] = 0;
         if(strcmp(input, "exit") == 0) break;
         bool runInBackground = false;
@@ -57,9 +57,32 @@ int main() {
             
             else {
                 int status;
-                waitpid(pid, &status, 0);
+                pid_t result = waitpid(pid, &status, 0);
+                if(result == -1) {
+                    // Handle waitpid error
+                    if(errno == ECHILD) {
+                        cerr << "No child processes" << endl;
+                    }
+                    else if(errno == EINTR) {
+                        cerr << "Waitpid was interrupted by a signal" << endl;
+                    }
+                    else {
+                        perror("waitpid failed");
+                    }
+                }
+                else {
+                    if(WIFEXITED(status)) {
+                        int exitStatus = WEXITSTATUS(status);
+                        cout << "Process exited with status: " << exitStatus << endl;
+                    }
+                    else if(WIFSIGNALED(status)) {
+                        int signalNumber = WTERMSIG(status);
+                        cout << "Process was terminated by signal: " << signalNumber << endl;
+                    }
+                }
             }
         }
+
         cout<<"Current Proccess ID: "<<pid<<endl;
         cout<<endl;
     }
