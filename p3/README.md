@@ -26,7 +26,7 @@ This is a lightweight shell program written in C++. It allows users to execute c
 
 ```
 % ls
-index.cpp  README.md
+jobkontrolle.cpp  README.md
 % g++ jobkontrolle.cpp -o jobkontrolle
 Background processes IDs are:
 PID: 1234
