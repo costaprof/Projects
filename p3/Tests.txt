@@ -1,0 +1,42 @@
+$g++ jobkontrolle.cpp -o jobkontrolle
+$./jobkontrolle
+
+%ls
+jobkontrolle.cpp  README.md  jobkontrolle
+
+%sleep 50&
+Background processes IDs are:
+PID: 13585
+Current Process ID: 13585
+Process ID: 13585, Group ID: 13585
+
+%sleep 60&
+Background processes IDs are:
+PID: 13585
+PID: 14007
+Current Process ID: 14007
+Process ID: 14007, Group ID: 14007
+
+%stop 14007
+Process number: 14007 Stopped!
+
+%cont 14007
+Process number: 14007 Continues!
+Process ID: 14262, Group ID: 14262
+Current Process ID: 14262
+
+%sleep 2&
+Background processes IDs are:
+PID: 13585
+PID: 14007
+PID: 14699
+Current Process ID: 14699
+Process ID: 14699, Group ID: 14699
+
+Child process 14699 terminated normally with status: 0
+
+%exit
+Sure you want to exit? (1/0)
+1
+
+$...
