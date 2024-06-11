@@ -29,13 +29,13 @@ This is a lightweight shell program written in C++. It allows users to execute c
 jobkontrolle.cpp  README.md
 % g++ jobkontrolle.cpp -o jobkontrolle
 Background processes IDs are:
-PID: 1234
+PID: 1357
 % ls
-index.cpp  README.md  myprogram
-% stop 1234
+jobkontrolle.cpp  README.md  jobkontrolle
+% stop 1357
 Process stopped successfully
-% cont 1234
-Process number: 1234 Continues!
+% cont 1357
+Process number: 1357 Continues!
 % exit
 Sure you want to exit? (1/0)
 1
