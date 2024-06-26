@@ -1,0 +1,1620 @@
+-------------------------------------------------------------------------
+
+./bakery <m> <n> <r> <k> <t>
+
+Die durchzuführenden Tests
+
+1 20 100 50 1000
+2 20 100 50 1000
+5 20 100 50 1000
+10 20 100 50 1000
+
+1 20 100 50 10000
+2 20 100 50 10000
+5 20 100 50 10000
+10 20 100 50 10000
+
+1 20 100 50 100000
+2 20 100 50 100000
+5 20 100 50 100000
+10 20 100 50 100000
+
+-------------------------------------------------------------------------
+
+Outputs (for m = 1 && m = 10)
+
+./bakery 1 20 100 50 1000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Processing order for customer 2.
+Customer 3 ordered 8 sandwiches
+Processing order for customer 3.
+Customer 4 ordered 6 sandwiches
+Processing order for customer 4.
+Customer 5 ordered 4 sandwiches
+Processing order for customer 5.
+Customer 6 ordered 6 sandwiches
+Processing order for customer 6.
+Customer 7 ordered 7 sandwiches
+Processing order for customer 7.
+Customer 8 ordered 3 sandwiches
+Processing order for customer 8.
+Customer 9 ordered 10 sandwiches
+Processing order for customer 9.
+Customer 10 ordered 2 sandwiches
+Processing order for customer 10.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 11 ordered 3 sandwiches
+Processing order for customer 11.
+Customer 12 ordered 8 sandwiches
+Processing order for customer 12.
+Customer 13 ordered 1 sandwiches
+Processing order for customer 13.
+Customer 14 ordered 10 sandwiches
+Processing order for customer 14.
+Customer 15 ordered 4 sandwiches
+Processing order for customer 15.
+Customer 16 ordered 7 sandwiches
+Processing order for customer 16.
+Customer 17 ordered 1 sandwiches
+Processing order for customer 17.
+Customer 18 ordered 7 sandwiches
+Processing order for customer 18.
+Customer 19 ordered 3 sandwiches
+Processing order for customer 19.
+Customer 20 ordered 7 sandwiches
+Processing order for customer 20.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 21 ordered 2 sandwiches
+Processing order for customer 21.
+Customer 22 ordered 9 sandwiches
+Processing order for customer 22.
+Customer 23 ordered 8 sandwiches
+Processing order for customer 23.
+Customer 24 ordered 10 sandwiches
+Processing order for customer 24.
+Customer 25 ordered 3 sandwiches
+Processing order for customer 25.
+Customer 26 ordered 1 sandwiches
+Processing order for customer 26.
+Customer 27 ordered 3 sandwiches
+Processing order for customer 27.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Processing order for customer 29.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 31 ordered 10 sandwiches
+Processing order for customer 31.
+Customer 32 ordered 3 sandwiches
+Processing order for customer 32.
+Customer 33 ordered 3 sandwiches
+Processing order for customer 33.
+Customer 34 ordered 9 sandwiches
+Processing order for customer 34.
+Customer 35 ordered 10 sandwiches
+Processing order for customer 35.
+Customer 36 ordered 8 sandwiches
+Processing order for customer 36.
+Customer 37 ordered 4 sandwiches
+Processing order for customer 37.
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Customer 39 ordered 2 sandwiches
+Processing order for customer 39.
+Customer 40 ordered 3 sandwiches
+Processing order for customer 40.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 41 ordered 10 sandwiches
+Processing order for customer 41.
+Customer 42 ordered 4 sandwiches
+Processing order for customer 42.
+Customer 43 ordered 2 sandwiches
+Processing order for customer 43.
+Customer 44 ordered 10 sandwiches
+Processing order for customer 44.
+Customer 45 ordered 5 sandwiches
+Processing order for customer 45.
+Customer 46 ordered 8 sandwiches
+Processing order for customer 46.
+Customer 47 ordered 9 sandwiches
+Processing order for customer 47.
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to Refilled to 20
+Refilled to 20
+20
+Refilled to 20
+Elapsed time: 5.03 seconds
+Throughput: 9.93 sandwiches/second
+End of program
+
+
+
+*************************************************************************
+
+
+
+./bakery 2 20 100 50 1000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Employee 1 has taken the order of customer 2 (7 sandwiches).
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Employee 1 is making 7 sandwiches for customer 2, this will take 7000 microseconds.
+Employee 1 has finished preparing 7 sandwiches for customer 2.
+Customer 3 ordered 8 sandwiches
+Processing order for customer 3.
+Customer 4 ordered 6 sandwiches
+Processing order for customer 4.
+Customer 5 ordered 4 sandwiches
+Processing order for customer 5.
+Customer 6 ordered 6 sandwiches
+Employee 2 has taken the order of customer 6 (6 sandwiches).
+Took 6 units, remaining: 7
+Took 6 units, remaining: 7
+Took 6 units, remaining: 7
+Took 6 units, remaining: 7
+Employee 2 is making 6 sandwiches for customer 6, this will take 6000 microseconds.
+Employee 2 has finished preparing 6 sandwiches for customer 6.
+Customer 7 ordered 7 sandwiches
+Processing order for customer 7.
+Customer 8 ordered 3 sandwiches
+Processing order for customer 8.
+Customer 9 ordered 10 sandwiches
+Processing order for customer 9.
+Customer 10 ordered 2 sandwiches
+Processing order for customer 10.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 11 ordered 3 sandwiches
+Employee 2 has taken the order of customer 11 (3 sandwiches).
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Employee 2 is making 3 sandwiches for customer 11, this will take 3000 microseconds.
+Employee 2 has finished preparing 3 sandwiches for customer 11.
+Customer 12 ordered 8 sandwiches
+Processing order for customer 12.
+Customer 13 ordered 1 sandwiches
+Processing order for customer 13.
+Customer 14 ordered 10 sandwiches
+Processing order for customer 14.
+Customer 15 ordered 4 sandwiches
+Processing order for customer 15.
+Customer 16 ordered 7 sandwiches
+Employee 2 has taken the order of customer 16 (7 sandwiches).
+Took 7 units, remaining: 10
+Took 7 units, remaining: 10
+Took 7 units, remaining: 10
+Took 7 units, remaining: 10
+Employee 2 is making 7 sandwiches for customer 16, this will take 7000 microseconds.
+Employee 2 has finished preparing 7 sandwiches for customer 16.
+Customer 17 ordered 1 sandwiches
+Processing order for customer 17.
+Customer 18 ordered 7 sandwiches
+Processing order for customer 18.
+Customer 19 ordered 3 sandwiches
+Processing order for customer 19.
+Customer 20 ordered 7 sandwiches
+Processing order for customer 20.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 21 ordered 2 sandwiches
+Employee 1 has taken the order of customer 21 (2 sandwiches).
+Took 2 units, remaining: 18
+Took 2 units, remaining: 18
+Took 2 units, remaining: 18
+Took 2 units, remaining: 18
+Employee 1 is making 2 sandwiches for customer 21, this will take 2000 microseconds.
+Employee 1 has finished preparing 2 sandwiches for customer 21.
+Customer 22 ordered 9 sandwiches
+Processing order for customer 22.
+Customer 23 ordered 8 sandwiches
+Processing order for customer 23.
+Customer 24 ordered 10 sandwiches
+Employee 1 has taken the order of customer 24 (10 sandwiches).
+Took 10 units, remaining: 8
+Took 10 units, remaining: 8
+Took 10 units, remaining: 8
+Took 10 units, remaining: 8
+Employee 1 is making 10 sandwiches for customer 24, this will take 10000 microseconds.
+Employee 1 has finished preparing 10 sandwiches for customer 24.
+Customer 25 ordered 3 sandwiches
+Processing order for customer 25.
+Customer 26 ordered 1 sandwiches
+Processing order for customer 26.
+Customer 27 ordered 3 sandwiches
+Processing order for customer 27.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Employee 1 has taken the order of customer 29 (8 sandwiches).
+Took 8 units, remaining: 0
+Took 8 units, remaining: 0
+Took 8 units, remaining: 0
+Took 8 units, remaining: 0
+Employee 1 is making 8 sandwiches for customer 29, this will take 8000 microseconds.
+Employee 1 has finished preparing 8 sandwiches for customer 29.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 31 ordered 10 sandwiches
+Processing order for customer 31.
+Customer 32 ordered 3 sandwiches
+Employee 2 has taken the order of customer 32 (3 sandwiches).
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Employee 2 is making 3 sandwiches for customer 32, this will take 3000 microseconds.
+Employee 2 has finished preparing 3 sandwiches for customer 32.
+Customer 33 ordered 3 sandwiches
+Processing order for customer 33.
+Customer 34 ordered 9 sandwiches
+Processing order for customer 34.
+Customer 35 ordered 10 sandwiches
+Employee 2 has taken the order of customer 35 (10 sandwiches).
+Took 10 units, remaining: 7
+Took 10 units, remaining: 7
+Took 10 units, remaining: 7
+Took 10 units, remaining: 7
+Employee 2 is making 10 sandwiches for customer 35, this will take 10000 microseconds.
+Employee 2 has finished preparing 10 sandwiches for customer 35.
+Customer 36 ordered 8 sandwiches
+Processing order for customer 36.
+Customer 37 ordered 4 sandwiches
+Employee 2 has taken the order of customer 37 (4 sandwiches).
+Took 4 units, remaining: 3
+Took 4 units, remaining: 3
+Took 4 units, remaining: 3
+Took 4 units, remaining: 3
+Employee 2 is making 4 sandwiches for customer 37, this will take 4000 microseconds.
+Employee 2 has finished preparing 4 sandwiches for customer 37.
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Customer 39 ordered 2 sandwiches
+Employee 2 has taken the order of customer 39 (2 sandwiches).
+Took 2 units, remaining: 1
+Took 2 units, remaining: 1
+Took 2 units, remaining: 1
+Took 2 units, remaining: 1
+Employee 2 is making 2 sandwiches for customer 39, this will take 2000 microseconds.
+Employee 2 has finished preparing 2 sandwiches for customer 39.
+Customer 40 ordered 3 sandwiches
+Processing order for customer 40.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 41 ordered 10 sandwiches
+Employee 2 has taken the order of customer 41 (10 sandwiches).
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Employee 2 is making 10 sandwiches for customer 41, this will take 10000 microseconds.
+Employee 2 has finished preparing 10 sandwiches for customer 41.
+Customer 42 ordered 4 sandwiches
+Processing order for customer 42.
+Customer 43 ordered 2 sandwiches
+Processing order for customer 43.
+Customer 44 ordered 10 sandwiches
+Processing order for customer 44.
+Customer 45 ordered 5 sandwiches
+Employee 1 has taken the order of customer 45 (5 sandwiches).
+Took 5 units, remaining: 5
+Took 5 units, remaining: 5
+Took 5 units, remaining: 5
+Took 5 units, remaining: 5
+Employee 1 is making 5 sandwiches for customer 45, this will take 5000 microseconds.
+Employee 1 has finished preparing 5 sandwiches for customer 45.
+Customer 46 ordered 8 sandwiches
+Processing order for customer 46.
+Customer 47 ordered 9 sandwiches
+Employee 1 has taken the order of customer 47 (9 sandwiches).
+Waiting for refill, needed: 9, available: 5
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 9 units, remaining: 11
+Took 9 units, remaining: 11
+Took 9 units, remaining: 11
+Took 9 units, remaining: 11
+Employee 1 is making 9 sandwiches for customer 47, this will take 9000 microseconds.
+Employee 1 has finished preparing 9 sandwiches for customer 47.
+Elapsed time: 5.04 seconds
+Throughput: 9.93 sandwiches/second
+End of program
+
+
+
+*************************************************************************
+
+
+./bakery 10 20 100 50 1000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Employee 1 has taken the order of customer 2 (7 sandwiches).
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Employee 1 is making 7 sandwiches for customer 2, this will take 7000 microseconds.
+Employee 1 has finished preparing 7 sandwiches for customer 2.
+Customer 3 ordered 8 sandwiches
+Employee 2 has taken the order of customer 3 (8 sandwiches).
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Employee 2 is making 8 sandwiches for customer 3, this will take 8000 microseconds.
+Employee 2 has finished preparing 8 sandwiches for customer 3.
+Customer 4 ordered 6 sandwiches
+Employee 3 has taken the order of customer 4 (6 sandwiches).
+Waiting for refill, needed: 6, available: 5
+Customer 5 ordered 4 sandwiches
+Employee 5 has taken the order of customer 5 (4 sandwiches).
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Employee 5 is making 4 sandwiches for customer 5, this will take 4000 microseconds.
+Employee 5 has finished preparing 4 sandwiches for customer 5.
+Customer 6 ordered 6 sandwiches
+Employee 6 has taken the order of customer 6 (6 sandwiches).
+Waiting for refill, needed: 6, available: 1
+Customer 7 ordered 7 sandwiches
+Employee 4 has taken the order of customer 7 (7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Customer 8 ordered 3 sandwiches
+Employee 7 has taken the order of customer 8 (3 sandwiches).
+Waiting for refill, needed: 3, available: 1
+Customer 9 ordered 10 sandwiches
+Employee 8 has taken the order of customer 9 (10 sandwiches).
+Waiting for refill, needed: 10, available: 1
+Customer 10 ordered 2 sandwiches
+Employee 10 has taken the order of customer 10 (2 sandwiches).
+Waiting for refill, needed: 2, available: 1
+Refilled to Refilled to 2020
+
+Refilled to 20
+Took 6 units, remaining: 14
+Refilled to 20
+Took 3 units, remaining: 11
+Took 6 units, remaining: 14
+Took 6 units, remaining: 14
+Took 3 units, remaining: 11
+Took 3 units, remaining: 11
+Took 6 units, remaining: 14
+Took 6 units, remaining: 5
+Took 3 units, remaining: 11
+Employee 7 is making 3 sandwiches for customer 8, this will take 3000 microseconds.
+Employee 3 is making 6 sandwiches for customer 4, this will take 6000 microseconds.
+Took 6 units, remaining: 5
+Took 6 units, remaining: 5
+Took 6 units, remaining: 5
+Employee 6 is making 6 sandwiches for customer 6, this will take 6000 microseconds.
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Employee 10 is making 2 sandwiches for customer 10, this will take 2000 microseconds.
+Customer 11 ordered 3 sandwiches
+Processing order for customer 11.
+Employee 7 has finished preparing 3 sandwiches for customer 8.
+Employee 10 has finished preparing 2 sandwiches for customer 10.
+Employee 3 has finished preparing 6 sandwiches for customer 4.
+Employee 6 has finished preparing 6 sandwiches for customer 6.
+Customer 12 ordered 8 sandwiches
+Employee 1 has taken the order of customer 12 (8 sandwiches).
+Waiting for refill, needed: 8, available: 3
+Customer 13 ordered 1 sandwiches
+Employee 2 has taken the order of customer 13 (1 sandwiches).
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Employee 2 is making 1 sandwiches for customer 13, this will take 1000 microseconds.
+Employee 2 has finished preparing 1 sandwiches for customer 13.
+Customer 14 ordered 10 sandwiches
+Employee 5 has taken the order of customer 14 (10 sandwiches).
+Waiting for refill, needed: 10, available: 2
+Customer 15 ordered 4 sandwiches
+Processing order for customer 15.
+Customer 16 ordered 7 sandwiches
+Employee 2 has taken the order of customer 16 (7 sandwiches).
+Waiting for refill, needed: 7, available: 2
+Customer 17 ordered 1 sandwiches
+Employee 9 has taken the order of customer 17 (1 sandwiches).
+Took 1 units, remaining: 1
+Took 1 units, remaining: 1
+Took 1 units, remaining: 1
+Took 1 units, remaining: 1
+Employee 9 is making 1 sandwiches for customer 17, this will take 1000 microseconds.
+Employee 9 has finished preparing 1 sandwiches for customer 17.
+Customer 18 ordered 7 sandwiches
+Employee 7 has taken the order of customer 18 (7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Customer 19 ordered 3 sandwiches
+Employee 10 has taken the order of customer 19 (3 sandwiches).
+Waiting for refill, needed: 3, available: 1
+Customer 20 ordered 7 sandwiches
+Employee 3 has taken the order of customer 20 (7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 7 units, remaining: 13
+Took 8 units, remaining: 5
+Took 8 units, remaining: 12
+Took 8 units, remaining: 12
+Waiting for refill, needed: 8, available: 1
+Took 7 units, remaining: 5
+Took 7 units, remaining: 5
+Waiting for refill, needed: 7, available: 1
+Took 3 units, remaining: 2
+Took 3 units, remaining: 2
+Took 3 units, remaining: 2
+Waiting for refill, needed: 3, available: 1
+Refilled to 20
+Took 7 units, remaining: 13
+Took 3 units, remaining: 10
+Employee 10 is making 3 sandwiches for customer 19, this will take 3000 microseconds.
+Employee 4 is making 7 sandwiches for customer 7, this will take 7000 microseconds.
+Took 8 units, remaining: 2
+Employee 1 is making 8 sandwiches for customer 12, this will take 8000 microseconds.
+Employee 10 has finished preparing 3 sandwiches for customer 19.
+Employee 4 has finished preparing 7 sandwiches for customer 7.
+Employee 1 has finished preparing 8 sandwiches for customer 12.
+Customer 21 ordered 2 sandwiches
+Processing order for customer 21.
+Customer 22 ordered 9 sandwiches
+Employee 9 has taken the order of customer 22 (9 sandwiches).
+Waiting for refill, needed: 9, available: 2
+Customer 23 ordered 8 sandwiches
+Employee 10 has taken the order of customer 23 (8 sandwiches).
+Waiting for refill, needed: 8, available: 2
+Customer 24 ordered 10 sandwiches
+Employee 4 has taken the order of customer 24 (10 sandwiches).
+Waiting for refill, needed: 10, available: 2
+Customer 25 ordered 3 sandwiches
+Employee 1 has taken the order of customer 25 (3 sandwiches).
+Waiting for refill, needed: 3, available: 2
+Customer 26 ordered 1 sandwiches
+Processing order for customer 26.
+Customer 27 ordered 3 sandwiches
+Processing order for customer 27.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Processing order for customer 29.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Waiting for refill, needed: 10, available: 2
+Took 7 units, remaining: 3
+Took 3 units, remaining: 0
+Took 7 units, remaining: 3
+Refilled to 20
+Took 7 units, remaining: 3
+Took 7 units, remaining: 13
+Took 3 units, remaining: 0
+Took 3 units, remaining: 0
+Employee 3 is making 7 sandwiches for customer 20, this will take 7000 microseconds.
+Took 10 units, remaining: 3
+Employee 5 is making 10 sandwiches for customer 14, this will take 10000 microseconds.
+Took 3 units, remaining: 0
+Employee 1 is making 3 sandwiches for customer 25, this will take 3000 microseconds.
+Employee 1 has finished preparing 3 sandwiches for customer 25.
+Employee 3 has finished preparing 7 sandwiches for customer 20.
+Employee 5 has finished preparing 10 sandwiches for customer 14.
+Customer 31 ordered 10 sandwiches
+Processing order for customer 31.
+Customer 32 ordered 3 sandwiches
+Employee 6 has taken the order of customer 32 (3 sandwiches).
+Waiting for refill, needed: 3, available: 0
+Customer 33 ordered 3 sandwiches
+Employee 1 has taken the order of customer 33 (3 sandwiches).
+Waiting for refill, needed: 3, available: 0
+Customer 34 ordered 9 sandwiches
+Employee 3 has taken the order of customer 34 (9 sandwiches).
+Waiting for refill, needed: 9, available: 0
+Customer 35 ordered 10 sandwiches
+Processing order for customer 35.
+Customer 36 ordered 8 sandwiches
+Processing order for customer 36.
+Customer 37 ordered 4 sandwiches
+Processing order for customer 37.
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Customer 39 ordered 2 sandwiches
+Processing order for customer 39.
+Customer 40 ordered 3 sandwiches
+Processing order for customer 40.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Took 8 units, remaining: 2
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Refilled to 20
+Took 8 units, remaining: 2
+Took 8 units, remaining: 2
+Took 10 units, remaining: 10
+Employee 8 is making 10 sandwiches for customer 9, this will take 10000 microseconds.
+Took 8 units, remaining: 2
+Employee 10 is making 8 sandwiches for customer 23, this will take 8000 microseconds.
+Employee 10 has finished preparing 8 sandwiches for customer 23.
+Employee 8 has finished preparing 10 sandwiches for customer 9.
+Customer 41 ordered 10 sandwiches
+Processing order for customer 41.
+Customer 42 ordered 4 sandwiches
+Employee 5 has taken the order of customer 42 (4 sandwiches).
+Waiting for refill, needed: 4, available: 2
+Customer 43 ordered 2 sandwiches
+Employee 10 has taken the order of customer 43 (2 sandwiches).
+Took 2 units, remaining: 0
+Took 2 units, remaining: 0
+Took 2 units, remaining: 0
+Took 2 units, remaining: 0
+Employee 10 is making 2 sandwiches for customer 43, this will take 2000 microseconds.
+Employee 10 has finished preparing 2 sandwiches for customer 43.
+Customer 44 ordered 10 sandwiches
+Processing order for customer 44.
+Customer 45 ordered 5 sandwiches
+Employee 10 has taken the order of customer 45 (5 sandwiches).
+Waiting for refill, needed: 5, available: 0
+Customer 46 ordered 8 sandwiches
+Processing order for customer 46.
+Customer 47 ordered 9 sandwiches
+Processing order for customer 47.
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Took 3 units, remaining: 7
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Waiting for refill, needed: Took 3, available: 010
+Took 3 units, remaining: 4
+ units, remaining: 7
+Took 10 units, remaining: 7
+Took 3 units, remaining: 4
+Took 3 units, remaining: 4
+Waiting for refill, needed: 3, available: 0
+Waiting for refill, needed: 10, available: 0
+Refilled to 20
+Took 43 units, remaining:  units, remaining: 017
+
+Took 4 units, remaining: 0
+Took 3 units, remaining: 14
+Employee 1 is making 3 sandwiches for customer 33, this will take 3000 microseconds.
+Took 4 units, remaining: 0
+Employee 6 is making 3 sandwiches for customer 32, this will take 3000 microseconds.
+Took 10 units, remaining: 4
+Employee 4 is making 10 sandwiches for customer 24, this will take 10000 microseconds.
+Took 4 units, remaining: 0
+Employee 5 is making 4 sandwiches for customer 42, this will take 4000 microseconds.
+Employee 1 has finished preparing 3 sandwiches for customer 33.
+Employee 6 has finished preparing 3 sandwiches for customer 32.
+Employee 5 has finished preparing 4 sandwiches for customer 42.
+Employee 4 has finished preparing 10 sandwiches for customer 24.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 9 units, remaining: 11
+Took 7 units, remaining: 4
+Took 9 units, remaining: 11
+Took 9 units, remaining: 11
+Waiting for refill, needed: 9, available: 0
+Took 7 units, remaining: 4
+Took 7 units, remaining: 4
+Waiting for refill, needed: 7, available: 0
+Refilled to 20
+Took 9 units, remaining: 11
+Employee 3 is making 9 sandwiches for customer 34, this will take 9000 microseconds.
+Took 7 units, remaining: 4
+Employee 2 is making 7 sandwiches for customer 16, this will take 7000 microseconds.
+Employee 2 has finished preparing 7 sandwiches for customer 16.
+Employee 3 has finished preparing 9 sandwiches for customer 34.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 5 units, remaining: 15
+Took 5 units, remaining: 15
+Took 5 units, remaining: 15
+Took 9 units, remaining: 6
+Waiting for refill, needed: 5, available: 4
+Took 9 units, remaining: 6
+Took 9 units, remaining: 6
+Refilled to 20
+Took 9 units, remaining: 11
+Employee 9 is making 9 sandwiches for customer 22, this will take 9000 microseconds.
+Took 5 units, remaining: 6
+Employee 10 is making 5 sandwiches for customer 45, this will take 5000 microseconds.
+Employee 10 has finished preparing 5 sandwiches for customer 45.
+Employee 9 has finished preparing 9 sandwiches for customer 22.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Waiting for refill, needed: 7, available: 6
+Refilled to 20
+Took 7 units, remaining: 13
+Employee 7 is making 7 sandwiches for customer 18, this will take 7000 microseconds.
+Employee 7 has finished preparing 7 sandwiches for customer 18.
+Elapsed time: 8.02 seconds
+Throughput: 6.23 sandwiches/second
+End of program
+
+
+*************************************************************************
+
+
+./bakery 1 20 100 50 10000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Processing order for customer 2.
+Customer 3 ordered 8 sandwiches
+Processing order for customer 3.
+Customer 4 ordered 6 sandwiches
+Processing order for customer 4.
+Customer 5 ordered 4 sandwiches
+Processing order for customer 5.
+Customer 6 ordered 6 sandwiches
+Processing order for customer 6.
+Customer 7 ordered 7 sandwiches
+Processing order for customer 7.
+Customer 8 ordered 3 sandwiches
+Processing order for customer 8.
+Customer 9 ordered 10 sandwiches
+Processing order for customer 9.
+Customer 10 ordered 2 sandwiches
+Processing order for customer 10.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 11 ordered 3 sandwiches
+Processing order for customer 11.
+Customer 12 ordered 8 sandwiches
+Processing order for customer 12.
+Customer 13 ordered 1 sandwiches
+Processing order for customer 13.
+Customer 14 ordered 10 sandwiches
+Processing order for customer 14.
+Customer 15 ordered 4 sandwiches
+Processing order for customer 15.
+Customer 16 ordered 7 sandwiches
+Processing order for customer 16.
+Customer 17 ordered 1 sandwiches
+Processing order for customer 17.
+Customer 18 ordered 7 sandwiches
+Processing order for customer 18.
+Customer 19 ordered 3 sandwiches
+Processing order for customer 19.
+Customer 20 ordered 7 sandwiches
+Processing order for customer 20.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 21 ordered 2 sandwiches
+Processing order for customer 21.
+Customer 22 ordered 9 sandwiches
+Processing order for customer 22.
+Customer 23 ordered 8 sandwiches
+Processing order for customer 23.
+Customer 24 ordered 10 sandwiches
+Processing order for customer 24.
+Customer 25 ordered 3 sandwiches
+Processing order for customer 25.
+Customer 26 ordered 1 sandwiches
+Processing order for customer 26.
+Customer 27 ordered 3 sandwiches
+Processing order for customer 27.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Processing order for customer 29.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 31 ordered 10 sandwiches
+Processing order for customer 31.
+Customer 32 ordered 3 sandwiches
+Processing order for customer 32.
+Customer 33 ordered 3 sandwiches
+Processing order for customer 33.
+Customer 34 ordered 9 sandwiches
+Processing order for customer 34.
+Customer 35 ordered 10 sandwiches
+Processing order for customer 35.
+Customer 36 ordered 8 sandwiches
+Processing order for customer 36.
+Customer 37 ordered 4 sandwiches
+Processing order for customer 37.
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Customer 39 ordered 2 sandwiches
+Processing order for customer 39.
+Customer 40 ordered 3 sandwiches
+Processing order for customer 40.
+Refilled to 20Refilled to
+Refilled to 20
+20
+Refilled to 20
+Customer 41 ordered 10 sandwiches
+Processing order for customer 41.
+Customer 42 ordered 4 sandwiches
+Processing order for customer 42.
+Customer 43 ordered 2 sandwiches
+Processing order for customer 43.
+Customer 44 ordered 10 sandwiches
+Processing order for customer 44.
+Customer 45 ordered 5 sandwiches
+Processing order for customer 45.
+Customer 46 ordered 8 sandwiches
+Processing order for customer 46.
+Customer 47 ordered 9 sandwiches
+Processing order for customer 47.
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Elapsed time: 5.04 seconds
+Throughput: 9.93 sandwiches/second
+End of program
+
+
+
+*************************************************************************
+
+
+
+./bakery 10 20 100 50 10000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Employee 1 has taken the order of customer 2 (7 sandwiches).
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Employee 1 is making 7 sandwiches for customer 2, this will take 70000 microseconds.
+Employee 1 has finished preparing 7 sandwiches for customer 2.
+Customer 3 ordered 8 sandwiches
+Employee 3 has taken the order of customer 3 (8 sandwiches).
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Employee 3 is making 8 sandwiches for customer 3, this will take 80000 microseconds.
+Employee 3 has finished preparing 8 sandwiches for customer 3.
+Customer 4 ordered 6 sandwiches
+Employee 2 has taken the order of customer 4 (6 sandwiches).
+Waiting for refill, needed: 6, available: 5
+Customer 5 ordered 4 sandwiches
+Employee 4 has taken the order of customer 5 (4 sandwiches).
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Employee 4 is making 4 sandwiches for customer 5, this will take 40000 microseconds.
+Employee 4 has finished preparing 4 sandwiches for customer 5.
+Customer 6 ordered 6 sandwiches
+Employee 5 has taken the order of customer 6 (6 sandwiches).
+Waiting for refill, needed: 6, available: 1
+Customer 7 ordered 7 sandwiches
+Employee 7 has taken the order of customer 7 (7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Customer 8 ordered 3 sandwiches
+Employee 6 has taken the order of customer 8 (3 sandwiches).
+Waiting for refill, needed: 3, available: 1
+Customer 9 ordered 10 sandwiches
+Employee 8 has taken the order of customer 9 (10 sandwiches).
+Waiting for refill, needed: 10, available: 1
+Customer 10 ordered 2 sandwiches
+Employee 9 has taken the order of customer 10 (2 sandwiches).
+Waiting for refill, needed: 2, available: 1
+Refilled to 20
+Refilled to 20
+Took 6 units, remaining: 14
+Refilled to Refilled to 20
+Took 6 units, remaining: 14
+20
+Took 6 units, remaining: 14
+Took 6 units, remaining: 14
+Employee 2 is making 6 sandwiches for customer 4, this will take 60000 microseconds.
+Took 6 units, remaining: 8
+Took 6 units, remaining: 8
+Took 6 units, remaining: 8
+Took 6 units, remaining: 8
+Employee 5 is making 6 sandwiches for customer 6, this will take 60000 microseconds.
+Took 3 units, remaining: 5
+Took 3 units, remaining: 5
+Took 3 units, remaining: 5
+Took 3 units, remaining: 5
+Employee 6 is making 3 sandwiches for customer 8, this will take 30000 microseconds.
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Employee 9 is making 2 sandwiches for customer 10, this will take 20000 microseconds.
+Customer 11 ordered 3 sandwiches
+Processing order for customer 11.
+Employee 9 has finished preparing 2 sandwiches for customer 10.
+Employee 6 has finished preparing 3 sandwiches for customer 8.
+Employee 2 has finished preparing 6 sandwiches for customer 4.
+Employee 5 has finished preparing 6 sandwiches for customer 6.
+Customer 12 ordered 8 sandwiches
+Employee 1 has taken the order of customer 12 (8 sandwiches).
+Waiting for refill, needed: 8, available: 3
+Customer 13 ordered 1 sandwiches
+Processing order for customer 13.
+Customer 14 ordered 10 sandwiches
+Employee 3 has taken the order of customer 14 (10 sandwiches).
+Waiting for refill, needed: 10, available: 3
+Customer 15 ordered 4 sandwiches
+Employee 4 has taken the order of customer 15 (4 sandwiches).
+Waiting for refill, needed: 4, available: 3
+Customer 16 ordered 7 sandwiches
+Employee 9 has taken the order of customer 16 (7 sandwiches).
+Waiting for refill, needed: 7, available: 3
+Customer 17 ordered 1 sandwiches
+Employee 10 has taken the order of customer 17 (1 sandwiches).
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Employee 10 is making 1 sandwiches for customer 17, this will take 10000 microseconds.
+Employee 10 has finished preparing 1 sandwiches for customer 17.
+Customer 18 ordered 7 sandwiches
+Employee 6 has taken the order of customer 18 (7 sandwiches).
+Waiting for refill, needed: 7, available: 2
+Customer 19 ordered 3 sandwiches
+Employee 2 has taken the order of customer 19 (3 sandwiches).
+Waiting for refill, needed: 3, available: 2
+Customer 20 ordered 7 sandwiches
+Processing order for customer 20.
+Refilled to 20
+Took 10 units, remaining: 10
+Waiting for refill, needed: 10, available: 2
+Took 7 units, remaining: 3
+Waiting for refill, needed: 7, available: 2
+Refilled to 20
+Took 3 units, remaining: 0
+Waiting for refill, needed: 3, available: 2
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Took 3 units, remaining: 7
+Took 3 units, remaining: 17
+Took 3 units, remaining: 17
+Employee 2 is making 3 sandwiches for customer 19, this will take 30000 microseconds.
+Took 10 units, remaining: 7
+Took 10 units, remaining: 7
+Employee 8 is making 10 sandwiches for customer 9, this will take 100000 microseconds.
+Took 7 units, remaining: 0
+Took 7 units, remaining: 0
+Took 7 units, remaining: 0
+Employee 7 is making 7 sandwiches for customer 7, this will take 70000 microseconds.
+Customer 21 ordered 2 sandwiches
+Processing order for customer 21.
+Employee 2 has finished preparing 3 sandwiches for customer 19.
+Employee 7 has finished preparing 7 sandwiches for customer 7.
+Employee 8 has finished preparing 10 sandwiches for customer 9.
+Customer 22 ordered 9 sandwiches
+Employee 10 has taken the order of customer 22 (9 sandwiches).
+Waiting for refill, needed: 9, available: 0
+Customer 23 ordered 8 sandwiches
+Processing order for customer 23.
+Customer 24 ordered 10 sandwiches
+Employee 5 has taken the order of customer 24 (10 sandwiches).
+Waiting for refill, needed: 10, available: 0
+Customer 25 ordered 3 sandwiches
+Employee 2 has taken the order of customer 25 (3 sandwiches).
+Waiting for refill, needed: 3, available: 0
+Customer 26 ordered 1 sandwiches
+Employee 7 has taken the order of customer 26 (1 sandwiches).
+Waiting for refill, needed: 1, available: 0
+Customer 27 ordered 3 sandwiches
+Processing order for customer 27.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Processing order for customer 29.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Took 10 units, remaining: 10
+Refilled to 20
+Took 7 units, remaining: 3
+Waiting for refill, needed: 10, available: 0
+Refilled to 20
+Waiting for refill, needed: 7, available: 0
+Refilled to 20
+Took 1 units, remaining: 2
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Employee 3 is making 10 sandwiches for customer 14, this will take 100000 microseconds.
+Took 7 units, remaining: 3
+Took 7 units, remaining: 3
+Took 7 units, remaining: 3
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Employee 6 is making 7 sandwiches for customer 18, this will take 70000 microseconds.
+Took 1 units, remaining: 2
+Employee 7 is making 1 sandwiches for customer 26, this will take 10000 microseconds.
+Employee 7 has finished preparing 1 sandwiches for customer 26.
+Customer 31 ordered 10 sandwiches
+Processing order for customer 31.
+Employee 6 has finished preparing 7 sandwiches for customer 18.
+Employee 3 has finished preparing 10 sandwiches for customer 14.
+Customer 32 ordered 3 sandwiches
+Employee 8 has taken the order of customer 32 (3 sandwiches).
+Waiting for refill, needed: 3, available: 2
+Customer 33 ordered 3 sandwiches
+Processing order for customer 33.
+Customer 34 ordered 9 sandwiches
+Processing order for customer 34.
+Customer 35 ordered 10 sandwiches
+Processing order for customer 35.
+Customer 36 ordered 8 sandwiches
+Processing order for customer 36.
+Customer 37 ordered 4 sandwiches
+Employee 7 has taken the order of customer 37 (4 sandwiches).
+Waiting for refill, needed: 4, available: 2
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Customer 39 ordered 2 sandwiches
+Processing order for customer 39.
+Customer 40 ordered 3 sandwiches
+Employee 6 has taken the order of customer 40 (3 sandwiches).
+Waiting for refill, needed: 3, available: 2
+Refilled to 20
+Took 8 units, remaining: 12
+Took 9 units, remaining: 3
+Refilled to 20
+Refilled to 20Waiting for refill, needed: 8, available: 2
+
+Waiting for refill, needed: 9, available: 2
+Took 3 units, remaining: 0
+Refilled to 20
+Took 3 units, remaining: 17
+Took 9 units, remaining: 8
+Took 9 units, remaining: 11
+Took 9 units, remaining: 11
+Employee 10 is making 9 sandwiches for customer 22, this will take 90000 microseconds.
+Took 3 units, remaining: 8
+Took 3 units, remaining: 8
+Employee 6 is making 3 sandwiches for customer 40, this will take 30000 microseconds.
+Took 8 units, remaining: 0
+Took 8 units, remaining: 0
+Took 8 units, remaining: 0
+Employee 1 is making 8 sandwiches for customer 12, this will take 80000 microseconds.
+Customer 41 ordered 10 sandwiches
+Processing order for customer 41.
+Employee 6 has finished preparing 3 sandwiches for customer 40.
+Employee 1 has finished preparing 8 sandwiches for customer 12.
+Employee 10 has finished preparing 9 sandwiches for customer 22.
+Customer 42 ordered 4 sandwiches
+Processing order for customer 42.
+Customer 43 ordered 2 sandwiches
+Employee 3 has taken the order of customer 43 (2 sandwiches).
+Waiting for refill, needed: 2, available: 0
+Customer 44 ordered 10 sandwiches
+Employee 6 has taken the order of customer 44 (10 sandwiches).
+Waiting for refill, needed: 10, available: 0
+Customer 45 ordered 5 sandwiches
+Employee 1 has taken the order of customer 45 (5 sandwiches).
+Waiting for refill, needed: 5, available: 0
+Customer 46 ordered 8 sandwiches
+Processing order for customer 46.
+Customer 47 ordered 9 sandwiches
+Processing order for customer 47.
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Waiting for refill, needed: 10, available: 0Refilled to
+20Refilled to 20
+Took 7 units, remaining: 3
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+
+Took 10 units, remaining: 10
+Employee 5 is making 10 sandwiches for customer 24, this will take 100000 microseconds.
+Took 7 units, remaining: 3
+Took 3 units, remaining: 0
+Took 7 units, remaining: 3
+Took 7 units, remaining: 3
+Employee 9 is making 7 sandwiches for customer 16, this will take 70000 microseconds.
+Took 3 units, remaining: 0
+Took 3 units, remaining: 0
+Took 3 units, remaining: 0
+Employee 8 is making 3 sandwiches for customer 32, this will take 30000 microseconds.
+Employee 8 has finished preparing 3 sandwiches for customer 32.
+Employee 9 has finished preparing 7 sandwiches for customer 16.
+Employee 5 has finished preparing 10 sandwiches for customer 24.
+Refilled to 20
+Took 4 units, remaining: 16
+Waiting for refill, needed: 4, available: 0
+Took 3 units, remaining: 13
+Refilled to 20
+Waiting for refill, needed: 3, available: 0
+Took 5 units, remaining: 8
+Waiting for refill, needed: 5, available: 0
+Took Refilled to 20
+2 units, remaining: 6
+Took 4 units, remaining: 16
+Refilled to Took 4 units, remaining: 16
+Took 3 units, remaining: 13
+20
+Took 3 units, remaining: 13
+Took 4 units, remaining: 2
+Took 5 units, remaining: 8
+Took 4 units, remaining: 16
+Took 2 units, remaining: 6
+Employee 7 is making 4 sandwiches for customer 37, this will take 40000 microseconds.
+Took 5 units, remaining: 8
+Took 2 units, remaining: 6
+4 units, remaining: 2
+Took 4 units, remaining: 2
+Took 3 units, remaining: 13
+Employee 2 is making 3 sandwiches for customer 25, this will take 30000 microseconds.
+Took 5 units, remaining: 8
+Employee 1 is making 5 sandwiches for customer 45, this will take 50000 microseconds.
+Took 2 units, remaining: 6
+Took 4 units, remaining: 2
+Employee 4 is making 4 sandwiches for customer 15, this will take 40000 microseconds.
+Employee 3 is making 2 sandwiches for customer 43, this will take 20000 microseconds.
+Employee 3 has finished preparing 2 sandwiches for customer 43.
+Employee 2 has finished preparing 3 sandwiches for customer 25.
+Employee 7 has finished preparing 4 sandwiches for customer 37.
+Employee 4 has finished preparing 4 sandwiches for customer 15.
+Employee 1 has finished preparing 5 sandwiches for customer 45.
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Waiting for refill, needed: 10, available: 2
+Refilled to 20
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Waiting for refill, needed: 10, available: 2
+Refilled to 20
+Took 10 units, remaining: 10
+Employee 6 is making 10 sandwiches for customer 44, this will take 100000 microseconds.
+Employee 6 has finished preparing 10 sandwiches for customer 44.
+Elapsed time: 7.11 seconds
+Throughput: 7.03 sandwiches/second
+End of program
+
+
+
+*************************************************************************
+
+
+ ./bakery 1 20 100 50 100000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Processing order for customer 2.
+Customer 3 ordered 8 sandwiches
+Processing order for customer 3.
+Customer 4 ordered 6 sandwiches
+Processing order for customer 4.
+Customer 5 ordered 4 sandwiches
+Processing order for customer 5.
+Customer 6 ordered 6 sandwiches
+Processing order for customer 6.
+Customer 7 ordered 7 sandwiches
+Processing order for customer 7.
+Customer 8 ordered 3 sandwiches
+Processing order for customer 8.
+Customer 9 ordered 10 sandwiches
+Processing order for customer 9.
+Customer 10 ordered 2 sandwiches
+Processing order for customer 10.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 11 ordered 3 sandwiches
+Processing order for customer 11.
+Customer 12 ordered 8 sandwiches
+Processing order for customer 12.
+Customer 13 ordered 1 sandwiches
+Processing order for customer 13.
+Customer 14 ordered 10 sandwiches
+Processing order for customer 14.
+Customer 15 ordered 4 sandwiches
+Processing order for customer 15.
+Customer 16 ordered 7 sandwiches
+Processing order for customer 16.
+Customer 17 ordered 1 sandwiches
+Processing order for customer 17.
+Customer 18 ordered 7 sandwiches
+Processing order for customer 18.
+Customer 19 ordered 3 sandwiches
+Processing order for customer 19.
+Customer 20 ordered 7 sandwiches
+Processing order for customer 20.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 21 ordered 2 sandwiches
+Processing order for customer 21.
+Customer 22 ordered 9 sandwiches
+Processing order for customer 22.
+Customer 23 ordered 8 sandwiches
+Processing order for customer 23.
+Customer 24 ordered 10 sandwiches
+Processing order for customer 24.
+Customer 25 ordered 3 sandwiches
+Processing order for customer 25.
+Customer 26 ordered 1 sandwiches
+Processing order for customer 26.
+Customer 27 ordered 3 sandwiches
+Processing order for customer 27.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Processing order for customer 29.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 31 ordered 10 sandwiches
+Processing order for customer 31.
+Customer 32 ordered 3 sandwiches
+Processing order for customer 32.
+Customer 33 ordered 3 sandwiches
+Processing order for customer 33.
+Customer 34 ordered 9 sandwiches
+Processing order for customer 34.
+Customer 35 ordered 10 sandwiches
+Processing order for customer 35.
+Customer 36 ordered 8 sandwiches
+Processing order for customer 36.
+Customer 37 ordered 4 sandwiches
+Processing order for customer 37.
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Customer 39 ordered 2 sandwiches
+Processing order for customer 39.
+Customer 40 ordered 3 sandwiches
+Processing order for customer 40.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Customer 41 ordered 10 sandwiches
+Processing order for customer 41.
+Customer 42 ordered 4 sandwiches
+Processing order for customer 42.
+Customer 43 ordered 2 sandwiches
+Processing order for customer 43.
+Customer 44 ordered 10 sandwiches
+Processing order for customer 44.
+Customer 45 ordered 5 sandwiches
+Processing order for customer 45.
+Customer 46 ordered 8 sandwiches
+Processing order for customer 46.
+Customer 47 ordered 9 sandwiches
+Processing order for customer 47.
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Elapsed time: 5.03 seconds
+Throughput: 9.93 sandwiches/second
+End of program
+
+
+
+*************************************************************************
+
+
+./bakery 10 20 100 50 100000
+Customer 1 ordered 4 sandwiches
+Processing order for customer 1.
+Customer 2 ordered 7 sandwiches
+Employee 1 has taken the order of customer 2 (7 sandwiches).
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Employee 1 is making 7 sandwiches for customer 2, this will take 700000 microseconds.
+Customer 3 ordered 8 sandwiches
+Employee 2 has taken the order of customer 3 (8 sandwiches).
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Took 8 units, remaining: 5
+Employee 2 is making 8 sandwiches for customer 3, this will take 800000 microseconds.
+Customer 4 ordered 6 sandwiches
+Employee 3 has taken the order of customer 4 (6 sandwiches).
+Waiting for refill, needed: 6, available: 5
+Customer 5 ordered 4 sandwiches
+Employee 4 has taken the order of customer 5 (4 sandwiches).
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Employee 4 is making 4 sandwiches for customer 5, this will take 400000 microseconds.
+Customer 6 ordered 6 sandwiches
+Employee 5 has taken the order of customer 6 (6 sandwiches).
+Waiting for refill, needed: 6, available: 1
+Customer 7 ordered 7 sandwiches
+Employee 6 has taken the order of customer 7 (7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Customer 8 ordered 3 sandwiches
+Employee 7 has taken the order of customer 8 (3 sandwiches).
+Waiting for refill, needed: 3, available: 1
+Employee 1 has finished preparing 7 sandwiches for customer 2.
+Employee 4 has finished preparing 4 sandwiches for customer 5.
+Customer 9 ordered 10 sandwiches
+Employee 8 has taken the order of customer 9 (10 sandwiches).
+Waiting for refill, needed: 10, available: 1
+Customer 10 ordered 2 sandwiches
+Employee 9 has taken the order of customer 10 (2 sandwiches).
+Waiting for refill, needed: 2, available: 1
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 6 units, remaining: 14
+Took 2 units, remaining: 12
+Took 6 units, remaining: 14
+Took 6 units, remaining: 14
+Took 6 units, remaining: 14
+Employee Took 32 units, remaining: 12
+Took 2 units, remaining: 12
+Took  is making Took 6 sandwiches for customer 46, this will take 600000 microseconds.
+2 units, remaining: 12
+Employee 9 is making 2 sandwiches for customer 10, this will take 200000 microseconds.
+ units, remaining: 6
+Employee 2 has finished preparing 8 sandwiches for customer 3.
+Took 6 units, remaining: 6
+Took 6 units, remaining: 6
+Took 6 units, remaining: 6
+Employee 5 is making 6 sandwiches for customer 6Took 3 units, remaining: 3
+, this will take 600000 microseconds.
+Took 3 units, remaining: 3
+Took 3 units, remaining: 3
+Took 3 units, remaining: 3
+Employee 7 is making 3 sandwiches for customer 8, this will take 300000 microseconds.
+Customer 11 ordered 3 sandwiches
+Processing order for customer 11.
+Customer 12 ordered 8 sandwiches
+Employee 4 has taken the order of customer 12 (8 sandwiches).
+Waiting for refill, needed: 8, available: 3
+Employee 9 has finished preparing 2 sandwiches for customer 10.
+Customer 13 ordered 1 sandwiches
+Employee 1 has taken the order of customer 13 (1 sandwiches).
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Took 1 units, remaining: 2
+Employee 1 is making 1 sandwiches for customer 13, this will take 100000 microseconds.
+Employee 7 has finished preparing 3 sandwiches for customer 8.
+Customer 14 ordered 10 sandwiches
+Employee 1 has finished preparing 1 sandwiches for customer 13.
+Processing order for customer 14.
+Customer 15 ordered 4 sandwiches
+Employee 9 has taken the order of customer 15 (4 sandwiches).
+Waiting for refill, needed: 4, available: 2
+Customer 16 ordered 7 sandwiches
+Employee 7 has taken the order of customer 16 (7 sandwiches).
+Waiting for refill, needed: 7, available: 2
+Employee 3 has finished preparing 6 sandwiches for customer 4.
+Employee 5 has finished preparing 6 sandwiches for customer 6.
+Customer 17 ordered 1 sandwiches
+Employee 1 has taken the order of customer 17 (1 sandwiches).
+Took 1 units, remaining: 1
+Took 1 units, remaining: 1
+Took 1 units, remaining: 1
+Took 1 units, remaining: 1
+Employee 1 is making 1 sandwiches for customer 17, this will take 100000 microseconds.
+Customer 18 ordered 7 sandwiches
+Employee 1Employee  has finished preparing 10 has taken the order of customer 118 sandwiches for customer 17. (
+7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Customer 19 ordered 3 sandwiches
+Processing order for customer 19.
+Customer 20 ordered 7 sandwiches
+Employee 3 has taken the order of customer 20 (7 sandwiches).
+Waiting for refill, needed: 7, available: 1
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Took 4 units, remaining: 6
+Took 4 units, remaining: 16
+Took 4 units, remaining: Took 1610 units, remaining: 6
+Took 4 units, remaining: 16
+Employee 9 is making 4 sandwiches for customer 15, this will take 400000 microseconds.
+
+Took 10 units, remaining: 6
+Took 10 units, remaining: 6
+Employee 8 is making 10 sandwiches for customer 9, this will take 1000000 microseconds.
+Customer 21 ordered 2 sandwiches
+Employee 5 has taken the order of customer 21 (2 sandwiches).
+Took 2 units, remaining: 4
+Took 2 units, remaining: 4
+Took 2 units, remaining: 4
+Took 2 units, remaining: 4
+Employee 5 is making 2 sandwiches for customer 21, this will take 200000 microseconds.
+Customer 22 ordered 9 sandwiches
+Employee 1 has taken the order of customer 22 (9 sandwiches).
+Waiting for refill, needed: 9, available: 4
+Customer 23 ordered 8 sandwiches
+Employee 5 has finished preparing 2 sandwiches for customer 21.
+Processing order for customer 23.
+Customer 24 ordered 10 sandwiches
+Employee 5 has taken the order of customer 24 (10 sandwiches).
+Waiting for refill, needed: 10, available: 4
+Employee 9 has finished preparing 4 sandwiches for customer 15.
+Customer 25 ordered 3 sandwiches
+Processing order for customer 25.
+Customer 26 ordered 1 sandwiches
+Employee 9 has taken the order of customer 26 (1 sandwiches).
+Took 1 units, remaining: 3
+Took 1 units, remaining: 3
+Took 1 units, remaining: 3
+Took 1 units, remaining: 3
+Employee 9 is making 1 sandwiches for customer 26, this will take 100000 microseconds.
+Customer 27 ordered 3 sandwiches
+Employee 9 has finished preparing 1 sandwiches for customer 26.
+Employee 9 has taken the order of customer 27 (3 sandwiches).
+Took 3 units, remaining: 0
+Took 3 units, remaining: 0
+Took 3 units, remaining: 0
+Took 3 units, remaining: 0
+Employee 9 is making 3 sandwiches for customer 27, this will take 300000 microseconds.
+Customer 28 ordered 4 sandwiches
+Processing order for customer 28.
+Customer 29 ordered 8 sandwiches
+Processing order for customer 29.
+Employee 9 has finished preparing 3 sandwiches for customer 27.
+Customer 30 ordered 6 sandwiches
+Processing order for customer 30.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 8 units, remaining: 12
+Took 7 units, remaining: 5
+Took 8 units, remaining: 12
+Took 8 units, remaining: 12
+Took 8 units, remaining: 12
+Employee 4 is making 8 sandwiches for customer 12, this will take 800000 microseconds.
+Took 7 units, remaining: 5
+Took 7 units, remaining: 5
+Took 7 units, remaining: 5
+Employee 10 is making 7 sandwiches for customer 18, this will take 700000 microseconds.
+Employee 8 has finished preparing 10 sandwiches for customer 9.
+Customer 31 ordered 10 sandwiches
+Employee 2 has taken the order of customer 31 (10 sandwiches).
+Waiting for refill, needed: 10, available: 5
+Customer 32 ordered 3 sandwiches
+Processing order for customer 32.
+Customer 33 ordered 3 sandwiches
+Processing order for customer 33.
+Customer 34 ordered 9 sandwiches
+Processing order for customer 34.
+Customer 35 ordered 10 sandwiches
+Processing order for customer 35.
+Customer 36 ordered 8 sandwiches
+Employee 9 has taken the order of customer 36 (8 sandwiches).
+Waiting for refill, needed: 8, available: 5
+Customer 37 ordered 4 sandwiches
+Processing order for customer 37.
+Employee 10 has finished preparing 7 sandwiches for customer 18.
+Customer 38 ordered 7 sandwiches
+Processing order for customer 38.
+Employee 4 has finished preparing 8 sandwiches for customer 12.
+Customer 39 ordered 2 sandwiches
+Employee 8 has taken the order of customer 39 (2 sandwiches).
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Took 2 units, remaining: 3
+Employee 8 is making 2 sandwiches for customer 39, this will take 200000 microseconds.
+Customer 40 ordered 3 sandwiches
+Processing order for customer 40.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took 7 units, remaining: 13
+Took Took 710 units, remaining:  units, remaining: 313
+Employee 7 is making 7 sandwiches for customer 16, this will take 700000 microseconds.
+
+Took 10 units, remaining: 3
+Took 10 units, remaining: 3
+Took 10 units, remaining: 3
+Employee 5 is making 10 sandwiches for customer 24, this will take 1000000 microseconds.
+Employee 8 has finished preparing 2 sandwiches for customer 39.
+Customer 41 ordered 10 sandwiches
+Processing order for customer 41.
+Customer 42 ordered 4 sandwiches
+Employee 10 has taken the order of customer 42 (4 sandwiches).
+Waiting for refill, needed: 4, available: 3
+Customer 43 ordered 2 sandwiches
+Employee 4 has taken the order of customer 43 (2 sandwiches).
+Took 2 units, remaining: 1
+Took 2 units, remaining: 1
+Took 2 units, remaining: 1
+Took 2 units, remaining: 1
+Employee 4 is making 2 sandwiches for customer 43, this will take 200000 microseconds.
+Customer 44 ordered 10 sandwiches
+Processing order for customer 44.
+Employee 4 has finished preparing 2 sandwiches for customer 43.
+Customer 45 ordered 5 sandwiches
+Employee 4 has taken the order of customer 45 (5 sandwiches).
+Waiting for refill, needed: 5, available: 1
+Customer 46 ordered 8 sandwiches
+Employee 8 has taken the order of customer 46 (8 sandwiches).
+Waiting for refill, needed: 8, available: 1
+Customer 47 ordered 9 sandwiches
+Processing order for customer 47.
+Employee 7 has finished preparing 7 sandwiches for customer 16.
+Customer 48 ordered 5 sandwiches
+Processing order for customer 48.
+Customer 49 ordered 6 sandwiches
+Processing order for customer 49.
+Customer 50 ordered 1 sandwiches
+Processing order for customer 50.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Employee 5 has finished preparing 10 sandwiches for customer 24.
+Took 8 units, remaining: 12
+Took 9 units, remaining: 3
+Took 8 units, remaining: 12
+Took 8 units, remaining: 12
+Took 8 units, remaining: 12
+Employee 9 is making 8 sandwiches for customer 36, this will take 800000 microseconds.
+Took 9 units, remaining: 3
+Took 9 units, remaining: 3
+Took 9 units, remaining: 3
+Employee 1 is making 9 sandwiches for customer 22, this will take 900000 microseconds.
+Employee 9 has finished preparing 8 sandwiches for customer 36.
+Employee 1 has finished preparing 9 sandwiches for customer 22.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 10 units, remaining: 10
+Took 7 units, remaining: 3
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Took 10 units, remaining: 10
+Employee 2 is making 10 sandwiches for customer 31, this will take 1000000 microseconds.
+Took 7 units, remaining: 3
+Took 7 units, remaining: 3
+Took 7 units, remaining: 3
+Employee 3 is making 7 sandwiches for customer 20, this will take 700000 microseconds.
+Employee 3 has finished preparing 7 sandwiches for customer 20.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 8 units, remaining: 12
+Took 7 units, remaining: 5
+Took 8 units, remaining: 12
+Took 4 units, remaining: 1
+Took 8 units, remaining: 12
+Took 7Took 8 units, remaining: 12
+Employee 8 is making 8 sandwiches for customer 46, this will take 800000 microseconds.
+ units, remaining: 5
+Employee 2 has finished preparing 10 sandwiches for customer 31.
+Took 7 units, remaining: 5
+Took 7 units, remaining: 5
+Employee 6 is making 7 sandwiches for customer 7, this will take 700000 microseconds.
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Took 4 units, remaining: 1
+Employee 10 is making 4 sandwiches for customer 42, this will take 400000 microseconds.
+Employee 10 has finished preparing 4 sandwiches for customer 42.
+Employee 6 has finished preparing 7 sandwiches for customer 7.
+Employee 8 has finished preparing 8 sandwiches for customer 46.
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Refilled to 20
+Took 5 units, remaining: 15
+Took 5 units, remaining: 15
+Took 5 units, remaining: 15
+Took 5 units, remaining: 15
+Employee 4 is making 5 sandwiches for customer 45, this will take 500000 microseconds.
+Employee 4 has finished preparing 5 sandwiches for customer 45.
+Elapsed time: 8.51 seconds
+Throughput: 5.87 sandwiches/second
+End of program
+
+-------------------------------------------------------------------------

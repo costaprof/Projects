@@ -193,12 +193,13 @@ private:
                 if (done && orderQueue.empty()) break;
                 order = orderQueue.front();
                 orderQueue.pop();
-                std::cout << "Employee " << id << " has taken the order of customrer " << order.first <<" (" << order.second << " sandwiches)." << std::endl;
+                std::cout << "Employee " << id << " has taken the order of customer " << order.first <<" (" << order.second << " sandwiches)." << std::endl;
             }
             prepareSandwiches(id, order.first, order.second);
             doneCustomers++;
         }
     }
+
 };
 
 
