@@ -69,7 +69,7 @@ public:
         customerGenerator = std::thread(&Bakery::generateCustomers, this);
     }
 
-    // Function to return a reference to employees vector
+
     std::vector<std::thread>& getEmployees() {
         return employees;
     }
