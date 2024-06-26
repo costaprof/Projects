@@ -100,57 +100,7 @@ public:
         }
     }
 
-    /*void generateCustomers() {
-        for (int i = 0; i < numCustomers; ++i) {
-            int sandwiches = rand() % 10 + 1;
-            {
-                std::lock_guard<std::mutex> lock(queueMtx);
-                customerQueue.push(sandwiches);
-                std::cout << "Customer " << i + 1 << " ordered " << sandwiches << " sandwiches" << std::endl;
-            }
-            cv.notify_one();
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        }
-        setDone();
-    }
 
-    void processOrders() {
-        int customerId = 1;
-        while (true) {
-            int sandwiches;
-            {
-                std::unique_lock<std::mutex> lock(queueMtx);
-                cv.wait(lock, [&] { return !customerQueue.empty() || done; });
-                if (done && customerQueue.empty()) break;
-                if (customerQueue.empty()) continue;
-                sandwiches = customerQueue.front();
-                customerQueue.pop();
-            }
-            {
-                std::lock_guard<std::mutex> lock(orderMtx);
-                customerOrderQueue.push({customerId, sandwiches});
-                customerId++;
-            }
-            cv.notify_all();
-        }
-    }
-
-    void employeeTask(int id) {
-        while (true) {
-            std::pair<int, int> order;
-            {
-                std::unique_lock<std::mutex> lock(orderMtx);
-                cv.wait(lock, [&] { return !customerOrderQueue.empty() || done; });
-                if (done && customerOrderQueue.empty()) break;
-                if (customerOrderQueue.empty()) continue;
-                order = customerOrderQueue.front();
-                customerOrderQueue.pop();
-                std::cout << "Employee " << id << " is preparing " << order.second << " sandwiches for customer " << order.first << "." << std::endl;
-            }
-            prepareSandwiches(id, order.first, order.second);
-            doneCustomers++;
-        }
-    }*/
 
     void prepareSandwiches(int employeeId, int customerId, int sandwiches) {
         cheese.take(sandwiches);
@@ -199,17 +149,16 @@ private:
         cv.notify_all();
     }
 
-    // ... other members ...
-    std::queue<std::pair<int, int>> orderQueue; // Combined queue for customer orders
 
-    // ... other functions ...
+    std::queue<std::pair<int, int>> orderQueue;
+
 
     void generateCustomers() {
         for (int i = 0; i < numCustomers; ++i) {
             int sandwiches = rand() % 10 + 1;
             {
                 std::lock_guard<std::mutex> lock(queueMtx);
-                orderQueue.push({i + 1, sandwiches}); // Push order to combined queue
+                orderQueue.push({i + 1, sandwiches});
                 std::cout << "Customer " << i + 1 << " ordered " << sandwiches << " sandwiches" << std::endl;
             }
             cv.notify_one();
@@ -226,12 +175,12 @@ private:
                 std::unique_lock<std::mutex> lock(queueMtx);
                 cv.wait(lock, [&] { return !orderQueue.empty() || done; });
                 if (done && orderQueue.empty()) break;
-                order = orderQueue.front(); // Pop order from combined queue
+                order = orderQueue.front();
                 orderQueue.pop();
                 customerId++;
             }
             std::cout << "Processing order for customer " << order.first << "." << std::endl;
-            cv.notify_all(); // Not necessary here, can be removed
+            cv.notify_all();
         }
     }
 
@@ -242,7 +191,7 @@ private:
                 std::unique_lock<std::mutex> lock(queueMtx);
                 cv.wait(lock, [&] { return !orderQueue.empty() || done; });
                 if (done && orderQueue.empty()) break;
-                order = orderQueue.front(); // Pop order from combined queue
+                order = orderQueue.front();
                 orderQueue.pop();
                 std::cout << "Employee " << id << " has taken the order of customrer " << order.first <<" (" << order.second << " sandwiches)." << std::endl;
             }
@@ -269,7 +218,6 @@ int main(int argc, char* argv[]) {
 
     Bakery bakery(numEmployees, containerCapacity, refillRate, numCustomers, prepTime);
 
-    // Join all employee threads
     for (auto& employee : bakery.getEmployees()) {
         if (employee.joinable()) {
             employee.join();
