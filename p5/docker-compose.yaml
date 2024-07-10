@@ -1,4 +1,4 @@
-version: '26.1.4'
+version: '2.27.1'
 services:
   high_cpu_memory_service:
     build: .
@@ -17,6 +17,7 @@ services:
       resources:
         limits:
           cpus: '0.5'
+          memory: 1G
 
   high_priority_service:
     build: .
@@ -26,8 +27,9 @@ services:
       resources:
         limits:
           cpus: '1.0'
-        reservations:
-          cpus: '1.0'
+          memory: 1G
+        #reservations:
+          #cpus: '1.0'
 
   low_memory_service:
     build: .

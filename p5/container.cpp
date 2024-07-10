@@ -4,46 +4,45 @@
 
 using namespace std;
 
-
-
 int fibonacci(int n) {
-
     if (n <= 1) {
         return n;
     } else {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
+}
 
+void fibonacciSum(size_t size) {
+    int* ptr = new int[size];
+    if (ptr == nullptr) {
+        cerr << "Memory allocation failed!\n";
+        return;
+    }
+
+    for (size_t i = 0; i < size; ++i) {
+        ptr[i] = fibonacci(i % 40);
+    }
+
+    long long sum = 0;
+    for (size_t i = 0; i < size; ++i) {
+        sum += ptr[i];
+    }
+
+    cout << "Fibonacci Sum = " << sum << endl;
+
+    delete[] ptr;
 }
 
 int main() {
 
-    const int n = 70;
-    const int size = 1000000;
+    const size_t size = 100000000;
 
-    cout << "Calculating Fibonacci number for n = " << n << "..." << endl;
+    fibonacciSum(size);
 
-    int result = fibonacci(n);
-
-    cout << "Fibonacci(" << n << ") = " << result << endl;
-
-
-    int* ptr = new int[size];
-
-    if (ptr == nullptr) {
-
-        std::cerr << "Memory allocation failed!\n";
-
-    }
-
-    for(int i=0; i<size; i++){
-
-        ptr[i]=i;
-    }
-
-    std::this_thread::sleep_for(std::chrono::seconds(10));
-
+    this_thread::sleep_for(chrono::seconds(10));
 
     return 0;
 }
+
+
 
