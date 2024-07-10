@@ -1,0 +1,39 @@
+version: '26.1.4'
+services:
+  high_cpu_memory_service:
+    build: .
+    container_name: high_cpu_memory
+    cpu_shares: 1024
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+
+  low_cpu_service:
+    build: .
+    container_name: low_cpu
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+
+  high_priority_service:
+    build: .
+    container_name: high_priority
+    cpu_shares: 4000
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+        reservations:
+          cpus: '1.0'
+
+  low_memory_service:
+    build: .
+    container_name: low_memory
+    deploy:
+      resources:
+        limits:
+          memory: 500M
+
