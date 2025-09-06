@@ -1,0 +1,10 @@
+---
+
+name: Common
+description: common test information
+
+variables:
+  sauce_name: "My fav Sauce"
+  sauce_price: 1.50
+  sauce_description: "Test Sauce"
+  sauce_stock: 10
